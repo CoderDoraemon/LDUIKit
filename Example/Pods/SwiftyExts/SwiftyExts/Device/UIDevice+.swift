@@ -10,13 +10,11 @@ import UIKit
 import DeviceKit
 
 public extension UIDevice {
-    
-    /// iPhone型号描述
+
     static let model: String = {
         return Device.current.description
     }()
-    
-    /// 是否是刘海屏
+
     static let isiPhoneXSeries: Bool = {
         struct Anchor {
             static var result: Bool?
@@ -30,10 +28,5 @@ public extension UIDevice {
         Anchor.result = result
         return result
     }()
-    
-    /// iPhone6以下版本手机
-    static var isiPhone6Below: Bool {
-        return (((Device.current.diagonal ) <= 4.7) ? true: false)
-    }
 }
 #endif

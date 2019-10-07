@@ -15,7 +15,6 @@
     "git": "https://github.com/CoderDoraemon/SwiftyExts.git",
     "tag": "0.0.1"
   },
-  "requires_arc": true,
   "swift_versions": "5.0",
   "default_subspecs": "Core",
   "frameworks": "Foundation",
@@ -25,6 +24,7 @@
     "osx": "10.10",
     "watchos": "2.0"
   },
+  "requires_arc": true,
   "subspecs": [
     {
       "name": "Core",

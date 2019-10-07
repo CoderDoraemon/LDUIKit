@@ -28,8 +28,6 @@ Swift分类扩展：SwiftyExts.
   s.source           = { :git => 'https://github.com/CoderDoraemon/SwiftyExts.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
   
-  s.requires_arc               = true
-
   s.swift_version = '5.0'
   s.default_subspec = 'Core'
   s.frameworks = 'Foundation'
