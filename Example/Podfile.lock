@@ -1,19 +1,19 @@
 PODS:
-  - DeviceKit (2.2.0)
+  - DeviceKit (2.3.0)
   - ReachabilitySwift (4.3.1)
-  - SwiftExtension/Attributes (0.0.1):
+  - SwiftExtension/Attributes (1.0.0):
     - SwiftExtension/Core
     - SwiftyAttributes (>= 5.1.1)
-  - SwiftExtension/Complete (0.0.1):
+  - SwiftExtension/Complete (1.0.0):
     - SwiftExtension/Attributes
     - SwiftExtension/Core
     - SwiftExtension/Device
     - SwiftExtension/Reachability
-  - SwiftExtension/Core (0.0.1)
-  - SwiftExtension/Device (0.0.1):
-    - DeviceKit (>= 2.2.0)
+  - SwiftExtension/Core (1.0.0)
+  - SwiftExtension/Device (1.0.0):
+    - DeviceKit (>= 2.3.0)
     - SwiftExtension/Core
-  - SwiftExtension/Reachability (0.0.1):
+  - SwiftExtension/Reachability (1.0.0):
     - ReachabilitySwift (>= 4.3.1)
     - SwiftExtension/Core
   - SwiftyAttributes (5.1.1)
@@ -32,9 +32,9 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  DeviceKit: ee5d2ec3bc8ad3847f9f0f202de0be09448707e1
+  DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
   ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
-  SwiftExtension: 191a86596bf92963a8944a55d787d85ce481e3bc
+  SwiftExtension: ad09289d2bcc7ff4b8d8506c548b97b7370502e9
   SwiftyAttributes: e3e13891ddac3c62b3d7798d5c3969cea88e62bb
 
 PODFILE CHECKSUM: 8d388db4e142612cc65129e46013d09057da18db

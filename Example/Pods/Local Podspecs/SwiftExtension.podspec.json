@@ -1,6 +1,6 @@
 {
   "name": "SwiftExtension",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "summary": "SwiftExtension.",
   "description": "SwiftExtension.",
   "homepage": "https://github.com/CoderDoraemon/SwiftExtension",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/CoderDoraemon/SwiftExtension.git",
-    "tag": "0.0.1"
+    "tag": "1.0.0"
   },
   "swift_versions": "5.0",
   "default_subspecs": "Core",
