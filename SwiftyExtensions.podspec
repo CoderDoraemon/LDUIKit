@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
   s.description      = <<-DESC
-SwiftyExtensions.
+Swift分类扩展：SwiftyExtensions.
                        DESC
 
   s.homepage         = 'https://github.com/CoderDoraemon/SwiftyExtensions'
