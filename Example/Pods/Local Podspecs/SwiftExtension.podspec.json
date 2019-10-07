@@ -18,10 +18,10 @@
   "swift_versions": "5.0",
   "default_subspecs": "Core",
   "frameworks": "Foundation",
+  "requires_arc": true,
   "platforms": {
     "ios": "8.0",
     "tvos": "9.0",
-    "osx": "10.10",
     "watchos": "2.0"
   },
   "subspecs": [
@@ -32,10 +32,7 @@
     {
       "name": "Attributes",
       "platforms": {
-        "ios": "8.0",
-        "tvos": "9.0",
-        "osx": "10.11",
-        "watchos": "2.0"
+        "ios": "8.0"
       },
       "source_files": "SwiftExtension/Attributes/**/*",
       "dependencies": {
@@ -58,7 +55,7 @@
 
         ],
         "DeviceKit": [
-          ">= 2.2.0"
+          ">= 2.3.0"
         ]
       }
     },

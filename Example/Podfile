@@ -1,7 +1,9 @@
+platform :ios, '9.0'
 use_frameworks!
 
 target 'SwiftExtension_Example' do
-  pod 'SwiftExtension', :path => '../'
+#  pod 'SwiftExtension', :path => '../'
+  pod 'SwiftExtension', :subspecs => ['Complete'], :path => '../'
 
   target 'SwiftExtension_Tests' do
     inherit! :search_paths

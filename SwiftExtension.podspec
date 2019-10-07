@@ -32,10 +32,10 @@ Pod::Spec.new do |s|
   s.default_subspec = 'Core'
   s.frameworks = 'Foundation'
   
-  s.ios.deployment_target = '8.0'
-  s.tvos.deployment_target = '9.0'
-  s.osx.deployment_target = '10.10'
-  s.watchos.deployment_target = '2.0'
+  s.requires_arc               = true
+  s.ios.deployment_target      = '8.0'
+  s.tvos.deployment_target     = '9.0'
+  s.watchos.deployment_target  = '2.0'
   
   s.subspec 'Core' do |core|
     core.source_files = 'SwiftExtension/Core/**/*'
@@ -43,9 +43,6 @@ Pod::Spec.new do |s|
   
   s.subspec 'Attributes' do |attributes|
     attributes.ios.deployment_target = '8.0'
-    attributes.tvos.deployment_target = '9.0'
-    attributes.osx.deployment_target = '10.11'
-    attributes.watchos.deployment_target = '2.0'
     
     attributes.source_files = 'SwiftExtension/Attributes/**/*'
     attributes.dependency 'SwiftExtension/Core'
@@ -57,7 +54,7 @@ Pod::Spec.new do |s|
     
     device.source_files = 'SwiftExtension/Device/**/*'
     device.dependency 'SwiftExtension/Core'
-    device.dependency 'DeviceKit', '>= 2.2.0'
+    device.dependency 'DeviceKit', '>= 2.3.0'
   end
   
   s.subspec 'Reachability' do |reachability|
@@ -76,4 +73,7 @@ Pod::Spec.new do |s|
     complete.dependency 'SwiftExtension/Device'
     complete.dependency 'SwiftExtension/Reachability'
   end
+  
+  s.requires_arc = true
+  
 end
