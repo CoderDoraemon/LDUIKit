@@ -4,6 +4,7 @@ use_frameworks!
 target 'SwiftyExtensions_Example' do
 #  pod 'SwiftyExtensions', :path => '../'
 pod 'SwiftyExtensions', :subspecs => ['Complete'], :path => '../'
+#pod 'SwiftyExtensions'
 
   target 'SwiftyExtensions_Tests' do
     inherit! :search_paths

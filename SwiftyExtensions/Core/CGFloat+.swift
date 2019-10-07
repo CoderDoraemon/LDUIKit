@@ -5,18 +5,13 @@
 //  Created by LDD on 2019/10/7.
 //
 
-import CoreGraphics
-
-#if os(iOS)
 import UIKit
-#endif
 
 public extension CGFloat {
     
     /// 导航栏高度
     static let navigationBarHeight: CGFloat = 44
     
-    #if os(iOS)
     /// 屏幕宽度
     static let screenWidth: CGFloat = UIScreen.main.bounds.size.width
     /// 屏幕高度
@@ -31,8 +26,4 @@ public extension CGFloat {
     static let bottomSafeAreaHeight: CGFloat = UIDevice.isiPhoneXSeries ? 34 : 0
     /// TabBar高度
     static let tabBarHeight: CGFloat = bottomSafeAreaHeight + 55
-    #endif
-
-
-    
 }

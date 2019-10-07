@@ -6,7 +6,7 @@
 //
 
 import Foundation
-//import SwiftyAttributes
+import SwiftyAttributes
 
 public extension NSMutableAttributedString {
 
