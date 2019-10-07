@@ -1,0 +1,90 @@
+{
+  "name": "SwiftyExtensions",
+  "version": "0.0.1",
+  "summary": "SwiftyExtensions.",
+  "description": "Swift分类扩展：SwiftyExtensions.",
+  "homepage": "https://github.com/CoderDoraemon/SwiftyExtensions",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "CoderDoraemon": "277544354@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/CoderDoraemon/SwiftyExtensions.git",
+    "tag": "0.0.1"
+  },
+  "swift_versions": "5.0",
+  "default_subspecs": "Core",
+  "frameworks": "Foundation",
+  "requires_arc": true,
+  "platforms": {
+    "ios": "8.0",
+    "tvos": "9.0",
+    "watchos": "2.0"
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "SwiftyExtensions/Core/**/*"
+    },
+    {
+      "name": "Attributes",
+      "platforms": {
+        "ios": "8.0"
+      },
+      "source_files": "SwiftyExtensions/Attributes/**/*",
+      "dependencies": {
+        "SwiftyExtensions/Core": [
+
+        ],
+        "SwiftyAttributes": [
+          ">= 5.1.1"
+        ]
+      }
+    },
+    {
+      "name": "Device",
+      "source_files": "SwiftyExtensions/Device/**/*",
+      "dependencies": {
+        "SwiftyExtensions/Core": [
+
+        ],
+        "DeviceKit": [
+          ">= 2.3.0"
+        ]
+      }
+    },
+    {
+      "name": "Reachability",
+      "source_files": "SwiftyExtensions/Reachability/**/*",
+      "dependencies": {
+        "SwiftyExtensions/Core": [
+
+        ],
+        "ReachabilitySwift": [
+          ">= 4.3.1"
+        ]
+      }
+    },
+    {
+      "name": "Complete",
+      "dependencies": {
+        "SwiftyExtensions/Core": [
+
+        ],
+        "SwiftyExtensions/Attributes": [
+
+        ],
+        "SwiftyExtensions/Device": [
+
+        ],
+        "SwiftyExtensions/Reachability": [
+
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
+}
