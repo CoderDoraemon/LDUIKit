@@ -31,7 +31,7 @@
 		0A6E8F83900B81880B1476A6 /* Pods-SwiftyExtensions_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyExtensions_Example.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyExtensions_Example/Pods-SwiftyExtensions_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		0F3AD73C8255A5CF95995C52 /* Pods-SwiftyExtensions_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyExtensions_Tests.release.xcconfig"; path = "Target Support Files/Pods-SwiftyExtensions_Tests/Pods-SwiftyExtensions_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		151420D1B11856C40AC145F9 /* Pods_SwiftyExtensions_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyExtensions_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1F3307A358DBB941A3295D5F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1F3307A358DBB941A3295D5F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		375FCEC24F05689253769BB8 /* Pods_SwiftyExtensions_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftyExtensions_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD01AFB9204008FA782 /* SwiftyExtensions_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyExtensions_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -43,9 +43,9 @@
 		607FACE51AFB9204008FA782 /* SwiftyExtensions_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyExtensions_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		9072266576BDA065B7A44FA2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		9072266576BDA065B7A44FA2 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		BA8BA47232FB90A403529E1D /* Pods-SwiftyExtensions_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyExtensions_Tests.debug.xcconfig"; path = "Target Support Files/Pods-SwiftyExtensions_Tests/Pods-SwiftyExtensions_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		DA3EB21212707809236E6409 /* SwiftyExtensions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = SwiftyExtensions.podspec; path = ../SwiftyExtensions.podspec; sourceTree = "<group>"; };
+		DA3EB21212707809236E6409 /* SwiftyExtensions.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SwiftyExtensions.podspec; path = ../SwiftyExtensions.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		DB0DC30FB1FCB5D80DA3A7BB /* Pods-SwiftyExtensions_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SwiftyExtensions_Example.release.xcconfig"; path = "Target Support Files/Pods-SwiftyExtensions_Example/Pods-SwiftyExtensions_Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,7 +147,6 @@
 				BA8BA47232FB90A403529E1D /* Pods-SwiftyExtensions_Tests.debug.xcconfig */,
 				0F3AD73C8255A5CF95995C52 /* Pods-SwiftyExtensions_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -227,6 +226,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
