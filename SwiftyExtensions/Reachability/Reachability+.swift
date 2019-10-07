@@ -5,9 +5,10 @@
 //  Created by EyreFree on 2019/8/15.
 //
 
+#if os(iOS)
 import Foundation
-import CoreTelephony
 import Reachability
+import CoreTelephony
 
 public enum NetworkType {
 
@@ -106,3 +107,4 @@ public extension Reachability {
         return addresses.first
     }
 }
+#endif
