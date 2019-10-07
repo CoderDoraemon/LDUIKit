@@ -33,9 +33,10 @@ Swift分类扩展：SwiftyExtensions.
   s.frameworks = 'Foundation'
   
   s.requires_arc               = true
-  s.ios.deployment_target      = '8.0'
-  s.tvos.deployment_target     = '9.0'
-  s.watchos.deployment_target  = '2.0'
+  s.ios.deployment_target = '8.0'
+  s.tvos.deployment_target = '9.0'
+  s.osx.deployment_target = '10.10'
+  s.watchos.deployment_target = '2.0'
   
   s.default_subspec = 'Core'
   
@@ -44,7 +45,10 @@ Swift分类扩展：SwiftyExtensions.
   end
   
   s.subspec 'Attributes' do |attributes|
-    attributes.ios.deployment_target = '8.0'
+  attributes.ios.deployment_target = '8.0'
+  attributes.tvos.deployment_target = '9.0'
+  attributes.osx.deployment_target = '10.11'
+  attributes.watchos.deployment_target = '2.0'
     
     attributes.source_files = 'SwiftyExtensions/Attributes/**/*'
     attributes.dependency 'SwiftyExtensions/Core'
@@ -52,18 +56,22 @@ Swift分类扩展：SwiftyExtensions.
   end
   
   s.subspec 'Device' do |device|
+    device.ios.deployment_target = '8.0'
+  
     device.source_files = 'SwiftyExtensions/Device/**/*'
     device.dependency 'SwiftyExtensions/Core'
     device.dependency 'DeviceKit', '>= 2.3.0'
   end
   
   s.subspec 'Reachability' do |reachability|
+  reachability.ios.deployment_target = '8.0'
     reachability.source_files = 'SwiftyExtensions/Reachability/**/*'
     reachability.dependency 'SwiftyExtensions/Core'
     reachability.dependency 'ReachabilitySwift', '>= 4.3.1'
   end
   
   s.subspec 'Complete' do |complete|
+  complete.ios.deployment_target = '8.0'
     complete.dependency 'SwiftyExtensions/Core'
     complete.dependency 'SwiftyExtensions/Attributes'
     complete.dependency 'SwiftyExtensions/Device'
