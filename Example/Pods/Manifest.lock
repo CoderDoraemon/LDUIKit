@@ -1,5 +1,7 @@
 PODS:
-  - SwiftExtension (0.1.0)
+  - SwiftExtension (0.0.1):
+    - SwiftExtension/Core (= 0.0.1)
+  - SwiftExtension/Core (0.0.1)
 
 DEPENDENCIES:
   - SwiftExtension (from `../`)
@@ -9,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftExtension: 277fe436ffe27be478308168e47bff2a7aa00531
+  SwiftExtension: 191a86596bf92963a8944a55d787d85ce481e3bc
 
 PODFILE CHECKSUM: dd4f0299acf8f68bfeda4de23be8c7edf6dcd74c
 
