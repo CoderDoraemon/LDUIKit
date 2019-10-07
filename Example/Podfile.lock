@@ -1,42 +1,16 @@
 PODS:
-  - DeviceKit (2.3.0)
-  - ReachabilitySwift (4.3.1)
-  - SwiftExtension/Attributes (1.0.0):
-    - SwiftExtension/Core
-    - SwiftyAttributes (>= 5.1.1)
-  - SwiftExtension/Complete (1.0.0):
-    - SwiftExtension/Attributes
-    - SwiftExtension/Core
-    - SwiftExtension/Device
-    - SwiftExtension/Reachability
-  - SwiftExtension/Core (1.0.0)
-  - SwiftExtension/Device (1.0.0):
-    - DeviceKit (>= 2.3.0)
-    - SwiftExtension/Core
-  - SwiftExtension/Reachability (1.0.0):
-    - ReachabilitySwift (>= 4.3.1)
-    - SwiftExtension/Core
-  - SwiftyAttributes (5.1.1)
+  - SwiftExtension (0.1.3)
 
 DEPENDENCIES:
-  - SwiftExtension/Complete (from `../`)
+  - SwiftExtension
 
 SPEC REPOS:
   trunk:
-    - DeviceKit
-    - ReachabilitySwift
-    - SwiftyAttributes
-
-EXTERNAL SOURCES:
-  SwiftExtension:
-    :path: "../"
+    - SwiftExtension
 
 SPEC CHECKSUMS:
-  DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
-  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
-  SwiftExtension: ad09289d2bcc7ff4b8d8506c548b97b7370502e9
-  SwiftyAttributes: e3e13891ddac3c62b3d7798d5c3969cea88e62bb
+  SwiftExtension: 7c0d34794086f6a07d6bcd76191fb296f74c2236
 
-PODFILE CHECKSUM: 8d388db4e142612cc65129e46013d09057da18db
+PODFILE CHECKSUM: 7fde8e348fd411eedfcaaeba3f476de4c16e323e
 
 COCOAPODS: 1.8.0.beta.2
