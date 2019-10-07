@@ -42,40 +42,40 @@ SwiftyExtensions.
   s.watchos.deployment_target  = '2.0'
   
   s.subspec 'Core' do |core|
-    core.source_files = 'SwiftExtension/Core/**/*'
+    core.source_files = 'SwiftyExtensions/Core/**/*'
   end
   
   s.subspec 'Attributes' do |attributes|
     attributes.ios.deployment_target = '8.0'
     
-    attributes.source_files = 'SwiftExtension/Attributes/**/*'
-    attributes.dependency 'SwiftExtension/Core'
+    attributes.source_files = 'SwiftyExtensions/Attributes/**/*'
+    attributes.dependency 'SwiftyExtensions/Core'
     attributes.dependency 'SwiftyAttributes', '>= 5.1.1'
   end
   
   s.subspec 'Device' do |device|
     device.ios.deployment_target = '8.0'
     
-    device.source_files = 'SwiftExtension/Device/**/*'
-    device.dependency 'SwiftExtension/Core'
+    device.source_files = 'SwiftyExtensions/Device/**/*'
+    device.dependency 'SwiftyExtensions/Core'
     device.dependency 'DeviceKit', '>= 2.3.0'
   end
   
   s.subspec 'Reachability' do |reachability|
     reachability.ios.deployment_target = '8.0'
     
-    reachability.source_files = 'SwiftExtension/Reachability/**/*'
-    reachability.dependency 'SwiftExtension/Core'
+    reachability.source_files = 'SwiftyExtensions/Reachability/**/*'
+    reachability.dependency 'SwiftyExtensions/Core'
     reachability.dependency 'ReachabilitySwift', '>= 4.3.1'
   end
   
   s.subspec 'Complete' do |complete|
     complete.ios.deployment_target = '8.0'
 
-    complete.dependency 'SwiftExtension/Core'
-    complete.dependency 'SwiftExtension/Attributes'
-    complete.dependency 'SwiftExtension/Device'
-    complete.dependency 'SwiftExtension/Reachability'
+    complete.dependency 'SwiftyExtensions/Core'
+    complete.dependency 'SwiftyExtensions/Attributes'
+    complete.dependency 'SwiftyExtensions/Device'
+    complete.dependency 'SwiftyExtensions/Reachability'
   end
   
   s.requires_arc = true

@@ -1,16 +1,42 @@
 PODS:
-  - SwiftyExtensions (0.1.0)
+  - DeviceKit (2.3.0)
+  - ReachabilitySwift (4.3.1)
+  - SwiftyAttributes (5.1.1)
+  - SwiftyExtensions/Attributes (0.0.1):
+    - SwiftyAttributes (>= 5.1.1)
+    - SwiftyExtensions/Core
+  - SwiftyExtensions/Complete (0.0.1):
+    - SwiftyExtensions/Attributes
+    - SwiftyExtensions/Core
+    - SwiftyExtensions/Device
+    - SwiftyExtensions/Reachability
+  - SwiftyExtensions/Core (0.0.1)
+  - SwiftyExtensions/Device (0.0.1):
+    - DeviceKit (>= 2.3.0)
+    - SwiftyExtensions/Core
+  - SwiftyExtensions/Reachability (0.0.1):
+    - ReachabilitySwift (>= 4.3.1)
+    - SwiftyExtensions/Core
 
 DEPENDENCIES:
-  - SwiftyExtensions (from `../`)
+  - SwiftyExtensions/Complete (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - DeviceKit
+    - ReachabilitySwift
+    - SwiftyAttributes
 
 EXTERNAL SOURCES:
   SwiftyExtensions:
     :path: "../"
 
 SPEC CHECKSUMS:
-  SwiftyExtensions: 4d5a78b87aba1950e6968749044a20749c1c0752
+  DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
+  ReachabilitySwift: 4032e2f59586e11e3b0ebe15b167abdd587a388b
+  SwiftyAttributes: e3e13891ddac3c62b3d7798d5c3969cea88e62bb
+  SwiftyExtensions: fee89e128ded0c648c5c758f0df636717fb334b7
 
-PODFILE CHECKSUM: fec829d804a30ae9d9efc10d3aaaa896ac44864e
+PODFILE CHECKSUM: 35b84ce5b606a8208ec7cae138e86b1c8fb4f91c
 
 COCOAPODS: 1.8.0.beta.2

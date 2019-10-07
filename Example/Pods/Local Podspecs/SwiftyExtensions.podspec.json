@@ -1,8 +1,8 @@
 {
   "name": "SwiftyExtensions",
-  "version": "0.1.0",
-  "summary": "A short description of SwiftyExtensions.",
-  "description": "TODO: Add long description of the pod here.",
+  "version": "0.0.1",
+  "summary": "SwiftyExtensions.",
+  "description": "SwiftyExtensions.",
   "homepage": "https://github.com/CoderDoraemon/SwiftyExtensions",
   "license": {
     "type": "MIT",
@@ -13,10 +13,88 @@
   },
   "source": {
     "git": "https://github.com/CoderDoraemon/SwiftyExtensions.git",
-    "tag": "0.1.0"
+    "tag": "0.0.1"
   },
   "platforms": {
-    "ios": "8.0"
+    "ios": "8.0",
+    "tvos": "9.0",
+    "watchos": "2.0"
   },
-  "source_files": "SwiftyExtensions/Classes/**/*"
+  "source_files": "SwiftyExtensions/Classes/**/*",
+  "swift_versions": "5.0",
+  "default_subspecs": "Core",
+  "frameworks": "Foundation",
+  "requires_arc": true,
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "SwiftyExtensions/Core/**/*"
+    },
+    {
+      "name": "Attributes",
+      "platforms": {
+        "ios": "8.0"
+      },
+      "source_files": "SwiftyExtensions/Attributes/**/*",
+      "dependencies": {
+        "SwiftyExtensions/Core": [
+
+        ],
+        "SwiftyAttributes": [
+          ">= 5.1.1"
+        ]
+      }
+    },
+    {
+      "name": "Device",
+      "platforms": {
+        "ios": "8.0"
+      },
+      "source_files": "SwiftyExtensions/Device/**/*",
+      "dependencies": {
+        "SwiftyExtensions/Core": [
+
+        ],
+        "DeviceKit": [
+          ">= 2.3.0"
+        ]
+      }
+    },
+    {
+      "name": "Reachability",
+      "platforms": {
+        "ios": "8.0"
+      },
+      "source_files": "SwiftyExtensions/Reachability/**/*",
+      "dependencies": {
+        "SwiftyExtensions/Core": [
+
+        ],
+        "ReachabilitySwift": [
+          ">= 4.3.1"
+        ]
+      }
+    },
+    {
+      "name": "Complete",
+      "platforms": {
+        "ios": "8.0"
+      },
+      "dependencies": {
+        "SwiftyExtensions/Core": [
+
+        ],
+        "SwiftyExtensions/Attributes": [
+
+        ],
+        "SwiftyExtensions/Device": [
+
+        ],
+        "SwiftyExtensions/Reachability": [
+
+        ]
+      }
+    }
+  ],
+  "swift_version": "5.0"
 }
