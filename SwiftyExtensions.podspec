@@ -24,14 +24,10 @@ SwiftyExtensions.
   s.homepage         = 'https://github.com/CoderDoraemon/SwiftyExtensions'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'CoderDoraemon' => 'xfsrn@139.com' }
+  s.author           = { 'CoderDoraemon' => '277544354@qq.com' }
   s.source           = { :git => 'https://github.com/CoderDoraemon/SwiftyExtensions.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '8.0'
-
-  s.source_files = 'SwiftyExtensions/Classes/**/*'
-  
   s.swift_version = '5.0'
   s.default_subspec = 'Core'
   s.frameworks = 'Foundation'
