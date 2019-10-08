@@ -21,6 +21,10 @@
 		1827F2F8234B3A9300752F27 /* NSObject+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827F2F7234B3A9300752F27 /* NSObject+.swift */; };
 		1827F2FA234B3D2A00752F27 /* URL+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827F2F9234B3D2A00752F27 /* URL+.swift */; };
 		1827F2FC234B3DC600752F27 /* NSInteger+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827F2FB234B3DC600752F27 /* NSInteger+.swift */; };
+		1827F2FE234C176800752F27 /* UITabBar+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827F2FD234C176800752F27 /* UITabBar+.swift */; };
+		1827F300234C235A00752F27 /* UILabel+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827F2FF234C235A00752F27 /* UILabel+.swift */; };
+		1827F302234C2BD800752F27 /* UIButton+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827F301234C2BD800752F27 /* UIButton+.swift */; };
+		1827F304234C39E200752F27 /* SwiftyFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1827F303234C39E200752F27 /* SwiftyFunctions.swift */; };
 		18591BC565A9DD7923920CE22B8E9948 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97510E01F00B0E030CCD461235885CF3 /* Foundation.framework */; };
 		2356E03A825302CF43F9D50D51A009FD /* NSImage+.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3EEE4EA95F609C862A6E5FD2CF98EC9 /* NSImage+.swift */; };
 		2B1AF8EF30381B46379523D6F28D78F2 /* Device.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AE8CB4FB8868745FB06442FCDDAC678 /* Device.generated.swift */; };
@@ -154,6 +158,10 @@
 		1827F2F7234B3A9300752F27 /* NSObject+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NSObject+.swift"; path = "SwiftyExts/Core/NSObject+.swift"; sourceTree = "<group>"; };
 		1827F2F9234B3D2A00752F27 /* URL+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "URL+.swift"; path = "SwiftyExts/Core/URL+.swift"; sourceTree = "<group>"; };
 		1827F2FB234B3DC600752F27 /* NSInteger+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "NSInteger+.swift"; path = "SwiftyExts/Core/NSInteger+.swift"; sourceTree = "<group>"; };
+		1827F2FD234C176800752F27 /* UITabBar+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UITabBar+.swift"; path = "SwiftyExts/Core/UITabBar+.swift"; sourceTree = "<group>"; };
+		1827F2FF234C235A00752F27 /* UILabel+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UILabel+.swift"; path = "SwiftyExts/Core/UILabel+.swift"; sourceTree = "<group>"; };
+		1827F301234C2BD800752F27 /* UIButton+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIButton+.swift"; path = "SwiftyExts/Core/UIButton+.swift"; sourceTree = "<group>"; };
+		1827F303234C39E200752F27 /* SwiftyFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SwiftyFunctions.swift; path = SwiftyExts/Core/SwiftyFunctions.swift; sourceTree = "<group>"; };
 		190D7383CCEFD8AB3F8CB93098A3F214 /* DeviceKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DeviceKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C12F31FA97BFC530AF253A3C7E3AC32 /* SwiftyExts-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyExts-dummy.m"; sourceTree = "<group>"; };
 		210C5033681F4662B97EA6E7B5B79027 /* Pods-SwiftyExts_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SwiftyExts_Example-frameworks.sh"; sourceTree = "<group>"; };
@@ -449,6 +457,10 @@
 				1827F2F7234B3A9300752F27 /* NSObject+.swift */,
 				1827F2F9234B3D2A00752F27 /* URL+.swift */,
 				1827F2FB234B3DC600752F27 /* NSInteger+.swift */,
+				1827F2FD234C176800752F27 /* UITabBar+.swift */,
+				1827F2FF234C235A00752F27 /* UILabel+.swift */,
+				1827F301234C2BD800752F27 /* UIButton+.swift */,
+				1827F303234C39E200752F27 /* SwiftyFunctions.swift */,
 			);
 			name = Core;
 			sourceTree = "<group>";
@@ -877,6 +889,7 @@
 				39F7B59DCABD4C559CCC64B934C99748 /* BinaryInteger+.swift in Sources */,
 				1827F2FA234B3D2A00752F27 /* URL+.swift in Sources */,
 				95507D8F97235D64089B6DFD9E9CB19E /* CGColor+.swift in Sources */,
+				1827F2FE234C176800752F27 /* UITabBar+.swift in Sources */,
 				1827F2F6234B390400752F27 /* UICollectionView+.swift in Sources */,
 				1827F2F4234B38EA00752F27 /* UIApplication+.swift in Sources */,
 				415A5AAFE1F40CB408D3237794AB45DC /* CGFloat+.swift in Sources */,
@@ -898,11 +911,14 @@
 				5F158C68E3BACC8639FCBB0F785C3AB9 /* SwiftyExts-dummy.m in Sources */,
 				11D95A43FD68E77831C37260AE61EBC7 /* UIColor+.swift in Sources */,
 				770A7AF974A8134D12246523981C1027 /* UIControl+.swift in Sources */,
+				1827F304234C39E200752F27 /* SwiftyFunctions.swift in Sources */,
 				F84C4732F92EFCB9AA71E80580D4F2C9 /* UIDevice+.swift in Sources */,
 				E165FA875912CB2333F0DE11ED897529 /* UIFont+.swift in Sources */,
 				00D482A7A446CB6F8DD17540FFEF1FDB /* UIGestureRecognizer+.swift in Sources */,
 				B30E68F70A24C87B5C2B76C53C79FC02 /* UIImage+.swift in Sources */,
+				1827F302234C2BD800752F27 /* UIButton+.swift in Sources */,
 				84CAA4A15237C4A8A7F1427521372B56 /* UIImageView+.swift in Sources */,
+				1827F300234C235A00752F27 /* UILabel+.swift in Sources */,
 				CFC2975EAE74127DB4B8A1731044100B /* UITableView+.swift in Sources */,
 				A2E8F3E2F4EB4409B8CB8884DBCE5077 /* UIView+.swift in Sources */,
 			);

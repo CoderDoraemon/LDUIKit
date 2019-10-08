@@ -47,7 +47,10 @@ public extension UIImage {
         }
         return nil
     }()
-
+    
+    /// 获取纯色图片
+    /// - Parameter color: 颜色
+    /// - Parameter size: 尺寸
     convenience init?(color: UIColor, size: CGSize = CGSize(width: 1, height: 1)) {
         UIGraphicsBeginImageContext(size)
         let context: CGContext? = UIGraphicsGetCurrentContext()
@@ -61,7 +64,9 @@ public extension UIImage {
             return nil
         }
     }
-
+    
+    /// 获取圆角图片
+    /// - Parameter radius: 圆角大小
     func cornerRadiused(radius: CGFloat) -> UIImage? {
         let imageLayer: CALayer = CALayer()
         imageLayer.frame = CGRect(x: 0, y: 0, width: self.size.width, height: self.size.height)
@@ -75,15 +80,20 @@ public extension UIImage {
         UIGraphicsEndImageContext()
         return roundedImage
     }
-
+    
+    /// 转png Data
     var png: Data? {
         return self.pngData()
     }
-
+    
+    /// 转jpg Data
+    /// - Parameter compressionQuality: 压缩比例
     func jpg(compressionQuality: CGFloat = 1) -> Data? {
         return self.jpegData(compressionQuality: compressionQuality)
     }
-
+    
+    /// 图片裁剪
+    /// - Parameter size: 裁剪尺寸
     func resize(size: CGSize) -> UIImage? {
         UIGraphicsBeginImageContext(size)
         self.draw(in: CGRect(origin: CGPoint.zero, size: size))
@@ -91,7 +101,9 @@ public extension UIImage {
         UIGraphicsEndImageContext()
         return newImage
     }
-
+    
+    /// 获取带有内边距的图片
+    /// - Parameter insets: 内边距
     func nine(insets: UIEdgeInsets? = nil) -> UIImage {
         let insets: UIEdgeInsets? = insets ?? {
             let width: CGFloat = self.size.width
@@ -109,6 +121,62 @@ public extension UIImage {
         return self.resizableImage(withCapInsets: insetsV, resizingMode: .stretch)
     }
 }
+
+public extension UIImage {
+    
+    /// 获取图片字节大小
+    func sizeAsBytes() -> Int {
+        return self.jpegData(compressionQuality: 1)?.count ?? 0
+    }
+    
+    /// 获取图片KB
+    func sizeAsKbytes() -> Int {
+        let bytes = sizeAsBytes()
+        return bytes != 0 ? bytes / 1024 : 0
+    }
+    
+    
+    /// 给定宽度获取【高度】
+    /// - Parameter width: 宽度
+    func aspectHeightForWidth(_ width: CGFloat) -> CGFloat {
+        return (width * self.size.height) / self.size.width
+    }
+
+    
+    /// 给定高度获取【宽度】
+    /// - Parameter width: 高度
+    func aspectWidthForHeight(_ height: CGFloat) -> CGFloat {
+        return (height * self.size.width) / self.size.height
+    }
+    
+    /// 指定宽度转换图片
+    /// - Parameter width: 宽度
+    func resizeWithWidth(_ width: CGFloat) -> UIImage {
+        
+        let aspectSize = CGSize (width: width, height: aspectHeightForWidth(width))
+
+        UIGraphicsBeginImageContext(aspectSize)
+        self.draw(in: CGRect(origin: CGPoint.zero, size: aspectSize))
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return img!
+    }
+    
+    /// 指定高度转换图片
+    /// - Parameter height: 高度
+    func resizeWithHeight(_ height: CGFloat) -> UIImage {
+        let aspectSize = CGSize (width: aspectWidthForHeight(height), height: height)
+
+        UIGraphicsBeginImageContext(aspectSize)
+        self.draw(in: CGRect(origin: CGPoint.zero, size: aspectSize))
+        let img = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+
+        return img!
+    }
+}
+
 #endif
 
 // GIF
@@ -116,6 +184,7 @@ fileprivate struct AssociatedObjectKeys {
     static var dataGifKey: String = "dataGifKey"
 }
 
+// MARK: GIF图片
 public extension UIImage {
 
     var dataGif: Data? {
@@ -256,5 +325,6 @@ public extension UIImage {
         return animation
     }
 }
+
 #endif
 

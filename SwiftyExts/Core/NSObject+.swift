@@ -26,6 +26,7 @@ public extension ClassNameProtocol {
 extension NSObject: ClassNameProtocol {}
 
 public extension NSObjectProtocol {
+    
     var describedProperty: String {
         let mirror = Mirror(reflecting: self)
         return mirror.children.map { element -> String in
@@ -37,9 +38,7 @@ public extension NSObjectProtocol {
     }
 }
 
-
-
-extension NSObject {
+public extension NSObject {
     
     func showClsRuntime() {
         print("Start methodlist")
