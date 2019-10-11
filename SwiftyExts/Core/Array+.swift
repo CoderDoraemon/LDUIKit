@@ -21,6 +21,14 @@ public func ==<T: Equatable>(lhs: [T]?, rhs: [T]?) -> Bool {
 
 public extension Array {
     
+    
+    /// 从索引范围获取子数组
+    /// - Parameter range: 索引
+    func get(at range: ClosedRange<Int>) -> Array {
+        let halfOpenClampedRange = Range(range).clamped(to: indices)
+        return Array(self[halfOpenClampedRange])
+    }
+    
     /// 检查数组是否包含至少一个与给定元素类型相同的项
     func containsType<T>(of element: T) -> Bool {
         let elementType = type(of: element)
