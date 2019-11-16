@@ -15,11 +15,11 @@ public protocol ClassNameProtocol {
 
 public extension ClassNameProtocol {
     static var className: String {
-        String(describing: self)
+        return String(describing: self)
     }
 
     var className: String {
-        Self.className
+        return Self.className
     }
 }
 
