@@ -53,6 +53,8 @@ public extension Reachability {
                 return .wifi
             case .cellular:
                 return Reachability.wwanNetworkType
+            case .unavailable:
+                <#code#>
             }
         } catch {
             return .unknown
