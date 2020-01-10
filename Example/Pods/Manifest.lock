@@ -1,0 +1,42 @@
+PODS:
+  - DeviceKit (2.3.0)
+  - ReachabilitySwift (5.0.0)
+  - SwiftyAttributes (5.1.1)
+  - SwiftyExts/Attributes (1.0.0):
+    - SwiftyAttributes (>= 5.1.1)
+    - SwiftyExts/Core
+  - SwiftyExts/Complete (1.0.0):
+    - SwiftyExts/Attributes
+    - SwiftyExts/Core
+    - SwiftyExts/Device
+    - SwiftyExts/Reachability
+  - SwiftyExts/Core (1.0.0)
+  - SwiftyExts/Device (1.0.0):
+    - DeviceKit (>= 2.3.0)
+    - SwiftyExts/Core
+  - SwiftyExts/Reachability (1.0.0):
+    - ReachabilitySwift (>= 4.3.1)
+    - SwiftyExts/Core
+
+DEPENDENCIES:
+  - SwiftyExts/Complete (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs:
+    - DeviceKit
+    - ReachabilitySwift
+    - SwiftyAttributes
+
+EXTERNAL SOURCES:
+  SwiftyExts:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DeviceKit: da103891aa928d89f64ea8dd8aca738c5f3d8ac0
+  ReachabilitySwift: 985039c6f7b23a1da463388634119492ff86c825
+  SwiftyAttributes: e3e13891ddac3c62b3d7798d5c3969cea88e62bb
+  SwiftyExts: 3c670a182fe857d979a59703c7dddc89e76c07e9
+
+PODFILE CHECKSUM: 62361d08717f4fdaccbe08df0c76e552a9d2f5fd
+
+COCOAPODS: 1.9.0.beta.2

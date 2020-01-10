@@ -1,8 +1,8 @@
 //
 //  Reachability+.swift
-//  EFFoundation
+//  SwiftExtension
 //
-//  Created by EyreFree on 2019/8/15.
+//  Created by LDD on 2018/10/7.
 //
 
 #if os(iOS)
@@ -43,6 +43,7 @@ public enum NetworkType {
 public extension Reachability {
 
     static var networkType: NetworkType {
+        
         guard let reachability: Reachability = Reachability() else { return .unknown }
         do {
             try reachability.startNotifier()

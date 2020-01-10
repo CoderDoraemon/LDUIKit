@@ -1,8 +1,8 @@
 //
 //  CGFloat+Device.swift
-//  DeviceKit
+//  SwiftExtension
 //
-//  Created by LDD on 2019/10/7.
+//  Created by LDD on 2018/10/7.
 //
 
 #if os(iOS)

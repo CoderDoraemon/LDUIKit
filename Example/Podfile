@@ -5,11 +5,8 @@ use_frameworks!
 
 target 'SwiftyExts_Example' do
   
-#  pod 'SwiftyExts'
-  
-  pod 'SwiftyExts', :path => '../'
-  
-#  pod 'SwiftyExts', :subspecs => ['Complete'], :path => '../'
+#  pod 'SwiftyExts', :subspecs => ['All'], :path => '../'
+  pod 'SwiftyExts/Device', :path => '../'
 #pod 'SwiftyExts/Device'
 #pod 'SwiftyExts/Reachability'
 #pod 'SwiftyExts/Attributes'
