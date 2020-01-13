@@ -42,18 +42,18 @@ Pod::Spec.new do |s|
         t.source_files = 'SwiftyExts/Core/UIKit+/**/*'
     end
     
+    s.subspec 'Core' do |t|
+        t.ios.deployment_target = '8.0'
+        t.dependency 'SwiftyExts/Core/Foundation'
+        t.dependency 'SwiftyExts/Core/UIKit'
+    end
+    
     s.subspec 'Attributes' do |t|
         t.ios.deployment_target = '8.0'
         
         t.source_files = 'SwiftyExts/Attributes/**/*'
         t.dependency 'SwiftyExts/Core'
         t.dependency 'SwiftyAttributes', '>= 5.1.1'
-    end
-    
-    s.subspec 'Core' do |t|
-        t.ios.deployment_target = '8.0'
-        t.dependency 'SwiftyExts/Core/Foundation'
-        t.dependency 'SwiftyExts/Core/UIKit'
     end
     
     s.subspec 'Device' do |t|
