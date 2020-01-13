@@ -9,6 +9,12 @@
 import UIKit
 import DeviceKit
 
+let kStatusBarHeight: CGFloat = UIDevice.isiPhoneXSeries ? 44 : 20
+let kStatusBarAndNavigationBarHeight: CGFloat = kStatusBarHeight + 44
+let kBottomSafeAreaHeight: CGFloat = UIDevice.isiPhoneXSeries ? 34 : 0
+let kTabBarHeight: CGFloat = 49.0
+let kTabBarSafeAreaHeight: CGFloat = kBottomSafeAreaHeight + kTabBarHeight
+
 public extension UIDevice {
     
     /// iPhone型号描述
